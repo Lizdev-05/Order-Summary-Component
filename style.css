@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    position: relative;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.section{
+    padding: 7%;
+    text-align: center;
+}
+
+
+ .content-section h2{
+     color: hsl(223, 47%, 23%);
+     margin-bottom: 10px;
+     font-weight: 900;
+     font-size: 32px;
+ }
+
+ .content-section p{
+     color: #8a8a8a;
+     margin-bottom: 35px;
+ }
+
+ .plan-box{
+     background-color:hsl(225, 100%, 98%);
+     border-radius: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 20px;
+ }
+
+ .left-plan{
+     display: flex;
+     align-items: center;
+ }
+
+ .annual{
+     margin-left: 20px;
+ }
+
+ .left-plan h4{
+     font-weight: 900px;
+     font-size: 15px;
+     color: hsl(223, 47%, 23%);
+ }
+
+ .left-plan p{
+     color: #8a8a8a;
+     font-size: 14px;
+ }
+
+ .right-plan a{
+     color:hsl(245, 75%, 52%);
+     font-weight: 900;
+     transition: color .3s ease;
+ }
+
+ .right-plan a:hover{
+     text-decoration: none;
+     color:hsl(223, 47%, 23%);
+ }
+
+
+
+ .button a{
+     display: block;
+     text-decoration: none;
+   
+
+ }
+
+
+
+ .btn{
+     margin: 30px 0;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 12px;
+    transition: background-color .3s ease;
+ }
+
+ .btn:hover{
+     background-color:hsl(224, 23%, 55%) ;
+ }
+
+ .order{
+     color: hsl(224, 23%, 55%);
+ }
+
+ .order:hover{
+    color:hsl(223, 47%, 23%) ;
+ }
+
+ @media (max-width:425px) {
+
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+      font-size: 14px;
+     
+    }
+     .container{
+         max-width: 87%;
+       
+     }
+
+     .content-section h2{
+         font-size: 23px;
+     }
+     .section{
+         padding:7% 9% ;
+     }
+
+     .plan-box{
+         padding: 12px;
+     }
+
+     .annual{
+         margin-left: 10px;
+     }
+     a{
+         font-size: 13px;
+     }
+
+    
+ }
+
+
